@@ -1,0 +1,42 @@
+{
+  "name": "NodejsStarterApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cfenv": "1.0.x",
+    "compression": "^1.6.2",
+    "consolidate": "^0.14.5",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-alpha.2",
+    "crypto": "0.0.3",
+    "dotenv": "^2.0.0",
+    "ejs": "^2.5.2",
+    "express": "4.13.x",
+    "morgan": "^1.7.0",
+    "request": "^2.78.0",
+    "socket.io": "^1.5.1",
+    "watson-developer-cloud": "^2.9.0"
+  },
+  "repository": {},
+  "engines": {
+    "node": "4.x"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "cssnano": "^3.8.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-changed": "^1.3.2",
+    "gulp-filter": "^4.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.10"
+  }
+}
