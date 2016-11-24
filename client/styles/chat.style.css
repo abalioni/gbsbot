@@ -38,10 +38,11 @@ body main span.me {
 body main span.you {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
     box-sizing: border-box;
     padding-right: 20px;
+    padding-left: 20px;
     border-right: 2px solid #264A60;
 
 }
