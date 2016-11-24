@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 60%;
+    height: 90%;
+    /*background-color: #fbfcf7;*/
+    background-color: rgba(221, 221, 221, 0.1);
+    /*border: 1px solid #325C80;*/
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.46);
+}
+
+body main span.me {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-left: 20px;
+    border-left: 2px solid purple;
+}
+
+body main span.you {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right: 20px;
+    border-right: 2px solid #264A60;
+
+}
+
+body main section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background-color: rgba(221, 221, 221, 0.44);
+    /*background-color: rgba(154, 154, 154, 0.6);*/
+}
+
+body main section form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+body main section input#question {
+    width: 400px;
+    height: 30px;
+    outline: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.9px solid #325C80;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    /*color: #325C80;*/
+}
+
+body main button {
+    /*width: 50px;*/
+    /*height: 35px;*/
+    background-color: #325C80;
+    /*background-color: transparent;*/
+    border: none;
+    border-radius: 5px;
+    color: #325C80;
+    margin-left: 10px;
+    font-size: 16px;
+}
