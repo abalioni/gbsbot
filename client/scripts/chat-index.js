@@ -2,15 +2,15 @@
     "use strict";
 
     var button = document.getElementById('askButton'),
-        meVariable = document.getElementById("me"),
-        youVariable = document.getElementById("you");
+        chat = document.getElementById("chat"),
+        meVar = document.getElementById("me") ;
 
 
     button.addEventListener("click", function () {
 
         var input = document.getElementById('question').value;
-        addQuestion(input);
-        
+        //addQuestion(input);
+
         fetch("/sendMessage", {
             method: 'post',
             headers: {
@@ -35,22 +35,25 @@
     });
 
 
-        function addQuestion (text) {
-            var p = document.createElement("p"),
-                docFragment = document.createDocumentFragment();
-                p.appendChild(document.createTextNode(text));
-                docFragment.appendChild(p);
-                youVariable.appendChild(docFragment);
-        };
-
         function addResponse (text) {
             var p = document.createElement("p"),
                 docFragment = document.createDocumentFragment();
                 p.appendChild(document.createTextNode(text));
                 docFragment.appendChild(p);
-                meVariable.appendChild(docFragment);
-
-            console.log(text);
+                meVar.appendChild(docFragment);
         };
+
+        // function addResponse (text) {
+        //     var span = document.createElement("span"),
+        //         p = document.createElement("p");
+        //         span.setAttribute("id", "me");
+        //         docFragment = document.createDocumentFragment();
+        //         span.appendChild(p);
+        //         p.appendChild(document.createTextNode(text));
+        //         docFragment.appendChild(span);
+        //         chat.appendChild(docFragment);
+        //
+        //     console.log(text);
+        // };
 
 }());
